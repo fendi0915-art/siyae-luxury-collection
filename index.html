@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="絲媛 SIYÆ Handmade Violin Case｜Designed for musicians with presence.">
+
+<meta property="og:title" content="絲媛 SIYÆ | Handmade Violin Case">
+<meta property="og:description" content="Designed for musicians with presence.">
+<meta property="og:image" content="https://fendi0915-art.github.io/siyae-luxury-collection/cover.jpg">
+  
+<title>絲媛 SIYÆ | Handmade Violin Case</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#000;
+  color:#f5f5f5;
+  font-family:'Playfair Display',serif;
+  overflow-x:hidden;
+}
+
+:root{
+  --gold:#c6a75a;
+  --orange:#ff9d57;
+  --grey:#bdbdbd;
+}
+
+/* HEADER */
+
+.lux-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:88px;
+  background:#000;
+  z-index:99999;
+  border-bottom:1px solid rgba(198,167,90,.22);
+  display:flex;
+  align-items:center;
+}
+
+.lux-logo{
+  margin-left:28px;
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  font-size:34px;
+  letter-spacing:8px;
+  font-weight:400;
+  white-space:nowrap;
+}
+
+.lux-logo span{
+  font-size:16px;
+  letter-spacing:5px;
+  margin-left:10px;
+}
+
+.lux-nav{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  gap:28px;
+}
+
+.lux-nav a{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  text-decoration:none;
+  font-size:11px;
+  letter-spacing:3px;
+  white-space:nowrap;
+}
+
+.lux-icons{
+  margin-left:auto;
+  margin-right:28px;
+}
+
+.lux-icons a{
+  color:var(--gold);
+  text-decoration:none;
+  font-size:34px;
+  line-height:1;
+}
+
+/* HERO */
+
+.hero{
+  margin-top:88px;
+  width:100%;
+  height:82vh;
+  position:relative;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.03) 0%,
+      rgba(0,0,0,0.12) 58%,
+      rgba(0,0,0,0.96) 100%
+    ),
+    url('hero-new.jpg');
+
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.page-arrow{
+  position:absolute;
+  bottom:28px;
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  border:1px solid rgba(198,167,90,.72);
+  background:rgba(0,0,0,.45);
+  color:var(--gold);
+  text-decoration:none;
+  font-size:42px;
+  line-height:48px;
+  text-align:center;
+  z-index:10;
+}
+
+.left-arrow{
+  left:28px;
+}
+
+.right-arrow{
+  right:28px;
+}
+
+/* HERO BRAND */
+
+.hero-brand{
+  background:#000;
+  text-align:center;
+  padding:74px 22px 88px;
+}
+
+.hero-brand h1{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  font-size:76px;
+  letter-spacing:8px;
+  font-weight:400;
+  line-height:1;
+  margin-bottom:28px;
+}
+
+.hero-brand-sub{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  font-size:22px;
+  letter-spacing:.42em;
+  margin-bottom:24px;
+}
+
+.hero-brand-text{
+  color:#fff;
+  font-size:24px;
+  letter-spacing:1px;
+  font-family:'Playfair Display',serif;
+}
+
+/* SECTION */
+
+section{
+  background:#000;
+  padding:88px 24px;
+  text-align:center;
+}
+
+h2{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  letter-spacing:6px;
+  font-weight:400;
+  font-size:42px;
+  margin-bottom:42px;
+}
+
+h3{
+  font-family:'Playfair Display',serif;
+  letter-spacing:3px;
+  font-weight:600;
+  margin-top:100px;
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+p{
+  max-width:900px;
+  margin:16px auto;
+  line-height:2;
+  color:#cfcfcf;
+  font-size:18px;
+}
+
+/* GALLERY */
+
+.gallery{
+  max-width:1180px;
+  margin:24px auto 0;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  display:block;
+}
+
+.main-img{
+  width:90%;
+  max-width:900px;
+  display:block;
+  margin:25px auto 28px;
+}
+
+.price{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  font-size:42px;
+  letter-spacing:3px;
+  margin-top:40px;
+  text-shadow:0 0 20px rgba(198,167,90,.15);
+}
+
+/* CUSTOM COLOR */
+
+#custom{
+  background:#000;
+  text-align:center;
+  padding:70px 24px 80px;
+}
+
+#custom h2{
+  margin-bottom:26px;
+}
+
+.custom-line{
+  width:110px;
+  height:1px;
+  background:rgba(198,167,90,.55);
+  margin:0 auto 40px;
+}
+
+.custom-sub{
+  font-size:28px;
+  color:#d9d9d9;
+  margin-bottom:24px;
+  letter-spacing:2px;
+}
+
+/* BUTTON */
+
+.btn{
+  display:inline-block;
+  margin:12px;
+  padding:15px 34px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  font-family:'Cinzel',serif;
+  letter-spacing:2px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+#order{
+  padding-top:40px;
+}
+
+footer{
+  background:#000;
+  border-top:1px solid rgba(198,167,90,.25);
+  padding:60px 20px;
+  text-align:center;
+  color:var(--gold);
+  font-family:'Cinzel',serif;
+  letter-spacing:3px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .lux-header{
+    height:132px;
+    align-items:flex-start;
+  }
+
+  .lux-logo{
+    position:absolute;
+    top:18px;
+    left:22px;
+    margin-left:0;
+    font-size:42px;
+    letter-spacing:8px;
+  }
+
+  .lux-logo span{
+    display:none;
+  }
+
+  .lux-icons{
+    position:absolute;
+    top:30px;
+    right:24px;
+    margin:0;
+  }
+
+  .lux-icons a{
+    font-size:34px;
+  }
+
+  .lux-nav{
+    display:flex;
+    position:absolute;
+    bottom:14px;
+    left:0;
+    transform:none;
+    width:100%;
+    padding:0 16px;
+    overflow-x:auto;
+    gap:22px;
+    justify-content:flex-start;
+  }
+
+  .lux-nav a{
+    font-size:11px;
+    letter-spacing:3px;
+  }
+
+  .hero{
+    margin-top:132px;
+    height:68vh;
+    background-size:cover;
+    background-position:center center;
+  }
+
+  .page-arrow{
+    width:48px;
+    height:48px;
+    bottom:22px;
+    font-size:38px;
+    line-height:42px;
+  }
+
+  .left-arrow{
+    left:22px;
+  }
+
+  .right-arrow{
+    right:22px;
+  }
+
+  .hero-brand{
+    padding:56px 22px 72px;
+  }
+
+  .hero-brand h1{
+    font-size:48px;
+    letter-spacing:4px;
+    margin-bottom:22px;
+  }
+
+  .hero-brand-sub{
+    font-size:13px;
+    letter-spacing:.28em;
+    line-height:1.8;
+  }
+
+  .hero-brand-text{
+    font-size:17px;
+    line-height:1.8;
+  }
+
+  section{
+    padding:64px 22px;
+  }
+
+  h2{
+    font-size:34px;
+    letter-spacing:6px;
+    margin-bottom:26px;
+  }
+
+  h3{
+    font-size:24px;
+  }
+
+  p{
+    font-size:16px;
+  }
+
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+  }
+
+  #custom{
+    padding:52px 22px 62px;
+  }
+
+  .custom-sub{
+    font-size:22px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="lux-header">
+
+  <div class="lux-logo">
+    絲媛 <span>SIYÆ</span>
+  </div>
+
+  <nav class="lux-nav">
+    <a href="#home">HOME</a>
+    <a href="#story">STORY</a>
+    <a href="#craft">CRAFT</a>
+    <a href="#artist">LOOKBOOK</a>
+    <a href="#product">PRODUCT</a>
+    <a href="#custom">CUSTOM</a>
+    <a href="#order">ORDER</a>
+  </nav>
+
+  <div class="lux-icons">
+    <a href="#order">☰</a>
+  </div>
+
+</header>
+
+<section id="home" class="hero">
+  <a class="page-arrow left-arrow" href="teaching.html">‹</a>
+  <a class="page-arrow right-arrow" href="tour.html">›</a>
+</section>
+
+<section class="hero-brand">
+
+  <h1>絲媛 SIYÆ</h1>
+
+  <div class="hero-brand-sub">
+    HANDMADE VIOLIN CASE
+  </div>
+
+  <div class="hero-brand-text">
+    Designed for musicians with presence.
+  </div>
+
+</section>
+
+<section id="story">
+
+  <h2>STORY</h2>
+
+  <p>
+    絲媛 SIYÆ，
+    源自職業演奏者長年於世界各地舞台之間移動的經驗與感受。
+  </p>
+
+  <p>
+    在近30國的演出與旅程之中，
+    逐漸體會到：
+    演奏者的風格，
+    從不只存在於聚光燈落下的瞬間。
+  </p>
+
+  <p>
+    從步入音樂廳的第一刻開始，
+    琴盒，
+    便已成為演奏者氣質與品味的一部分。
+  </p>
+
+</section>
+
+<section id="craft">
+
+  <h2>CRAFT</h2>
+
+  <p>
+    工廠成立30年以上，
+    堅持高訂品質與手工工藝。
+  </p>
+
+  <p>
+    使用頭層牛皮、天然染劑、
+    全金屬五金系統，
+    並以全手工拉皮工藝製作。
+  </p>
+
+  <p>
+    真牛皮具耐刮、耐磨、防潑水特性，
+    適合長時間移動與演出使用。
+  </p>
+
+</section>
+
+<section id="artist">
+
+  <h2>ARTIST LOOKBOOK</h2>
+
+  <p>
+    職業演奏者的舞台日常與移動美學。
+    從音樂廳、排練場到城市旅程。
+    琴盒不只是保護，更是風格的一部分。
+  </p>
+
+  <div class="gallery">
+    <img src="hero-new.jpg" loading="lazy" alt="">
+    <img src="orange-lifestyle.jpg" loading="lazy" alt="">
+    <img src="orange-artist.jpg" loading="lazy" alt="">
+    <img src="orange-tree.jpg" loading="lazy" alt="">
+  </div>
+
+</section>
+
+<section id="product">
+
+  <h2>PRODUCT DETAILS</h2>
+
+  <h3 style="color:#ff9d57;">ARTISTIC ORANGE</h3>
+
+  <img src="orange-main.jpg" class="main-img" alt="">
+
+  <div class="gallery">
+    <img src="orange-main.jpg" loading="lazy" alt="">
+    <img src="orange-1.jpg" loading="lazy" alt="">
+    <img src="orange-2.jpg" loading="lazy" alt="">
+    <img src="orange-3.jpg" loading="lazy" alt="">
+  </div>
+
+  <p>
+    愛馬仕橘｜
+    最具舞台感與藝術張力的高訂版本。
+  </p>
+
+  <h3 style="color:#bdbdbd;">CLASSIC GREY</h3>
+
+  <img src="grey-main.jpg" class="main-img" alt="">
+
+  <div class="gallery">
+    <img src="grey-main.jpg" loading="lazy" alt="">
+    <img src="grey-1.jpg" loading="lazy" alt="">
+    <img src="grey-2.jpg" loading="lazy" alt="">
+    <img src="grey-3.jpg" loading="lazy" alt="">
+  </div>
+
+  <p>
+    經典霧灰｜
+    低調、沉穩，適合正式演出與長期使用。
+  </p>
+
+  <h3 style="color:#d4af37;">IMPERIAL GOLD</h3>
+
+  <img src="gold-main.jpg" class="main-img" alt="">
+
+  <div class="gallery">
+    <img src="gold-main.jpg" loading="lazy" alt="">
+    <img src="gold-1.jpg" loading="lazy" alt="">
+    <img src="gold-2.jpg" loading="lazy" alt="">
+    <img src="gold-3.jpg" loading="lazy" alt="">
+  </div>
+
+  <p>
+    帝國金｜
+    高辨識度舞台色彩，
+    為演奏者帶來強烈存在感。
+  </p>
+
+  <div class="price">
+    FROM NT$42,000
+  </div>
+
+  <p>
+    頭層牛皮｜天然染劑｜全金屬五金｜全手工拉皮｜耐刮耐磨｜防潑水
+  </p>
+
+</section>
+
+<section id="custom">
+
+  <h2>CUSTOM COLOR</h2>
+
+  <p class="custom-sub">
+    私人高訂系列
+  </p>
+
+  <p>
+    提供專屬顏色與皮革客製服務。
+  </p>
+
+  <p>
+    每件作品皆為獨立工藝製作。
+  </p>
+
+</section>
+
+<section id="order">
+
+  <h2>ORDER</h2>
+
+  <p>
+    CONTACT FOR PURCHASE & CUSTOM REQUEST
+  </p>
+
+  <p>
+    Follow Instagram｜
+    分享置頂貼文至限時動態，
+    即可獲得專屬 9 折禮遇。
+  </p>
+
+  <a class="btn" href="https://instagram.com/ssuyuan_chang_fendi" target="_blank">
+    INSTAGRAM
+  </a>
+
+  <a class="btn" href="https://line.me/ti/p/~fendi-chang" target="_blank">
+    LINE ORDER
+  </a>
+
+  <a class="btn" href="https://www.facebook.com/share/1J3ShWTmfo/?mibextid=wwXIfr" target="_blank">
+    FACEBOOK
+  </a>
+
+</section>
+
+<footer>
+  絲媛 SIYÆ<br><br>
+  Handmade Violin Case Collection
+</footer>
+
+</body>
+</html>
